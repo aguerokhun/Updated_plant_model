@@ -9,7 +9,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/*": {"origins": "*", "methods": "*", "headers": "*"}}
+CORS(app, resources={r"/*": {"origins": "*", "methods": "*", "headers": "*"}})
 
 # Load the CSV file
 data = pd.read_csv('Updated_Kwara_State_Crops_Calendar.csv')
