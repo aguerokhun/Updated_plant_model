@@ -4,9 +4,13 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 import numpy as np
+from flask_cors import CORS
 from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
+CORS(app, resources={r"/*": {"origins": "*", "methods": "*", "headers": "*"}}
+
 # Load the CSV file
 data = pd.read_csv('Updated_Kwara_State_Crops_Calendar.csv')
 
