@@ -3,4 +3,4 @@ services:
     type: web
     env: python=3.11
     buildCommand: pip install -r requirements.txt
-    startcommand: uvicorn crop_timedata:app --host 0.0.0.0 --port $PORT
+    startcommand: uvicorn Updated_plant_model:app --host 0.0.0.0 --port $PORT
