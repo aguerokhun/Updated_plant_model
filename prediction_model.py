@@ -20,7 +20,7 @@ label_encoder_crop = LabelEncoder()
 
 data['location_encoded'] = label_encoder_location.fit_transform(data['Location'])
 data['crop_encoded'] = label_encoder_crop.fit_transform(data['Crop'])
-data['planting_month'] = data['Planting Time']
+data['planting_month'] = data['Planting Month']
 
 # Define features and target variables 
 X_planting = data[['location_encoded', 'crop_encoded']]
